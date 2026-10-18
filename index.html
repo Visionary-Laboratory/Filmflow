@@ -7,16 +7,16 @@
   <meta name="theme-color" content="#ffffff">
   <title>FilmFlow: Agentic System for 3D Virtual Film Cinematography</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=v2v-pairs">
-  <script defer src="content.js?v=v2v-pairs"></script>
-  <script defer src="app.js?v=v2v-pairs"></script>
+  <link rel="stylesheet" href="styles.css?v=t2v-v2v">
+  <script defer src="content.js?v=t2v-v2v"></script>
+  <script defer src="app.js?v=t2v-v2v"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="wrap nav" aria-label="Main navigation">
       <a class="wordmark" href="#top" aria-label="FilmFlow home"><span class="brand-mark" aria-hidden="true">F</span>FilmFlow</a>
-      <div class="nav-links"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#long-takes">Demos</a><a href="#resources">Resources</a></div>
+      <div class="nav-links"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#t2v">Demos</a><a href="#resources">Resources</a></div>
     </nav>
   </header>
   <main id="main">
@@ -29,7 +29,7 @@
         <p class="affiliations" id="affiliations">Paper under double-blind review</p>
         <div class="resource-buttons">
           <a class="button primary" href="assets/filmflow-paper.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6v18h12V7zM14 3v5h4M9 12h6M9 16h6"/></svg>Paper <span aria-hidden="true">↗</span></a>
-          <a class="button" href="#long-takes"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></svg>View demos</a>
+          <a class="button" href="#t2v"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></svg>View demos</a>
           <a class="button" href="#method">Method overview <span aria-hidden="true">↓</span></a>
         </div>
         <figure class="teaser">
@@ -63,22 +63,16 @@
       </div>
     </section>
 
-    <div class="demo-nav" aria-label="Demo sections"><div class="wrap demo-nav-inner"><span class="demo-label">DEMO GALLERY</span><nav aria-label="Jump to demo group"><a href="#long-takes">Long takes <span>04</span></a><a href="#short-shots">Short shots <span>16</span></a><a href="#v2v">Video-to-video <span>08</span></a></nav></div></div>
-    <section class="section gallery-section" id="long-takes">
+    <div class="demo-nav" aria-label="Demo sections"><div class="wrap demo-nav-inner"><span class="demo-label">DEMO GALLERY</span><nav aria-label="Jump to demo group"><a href="#t2v">T2V <span>20</span></a><a href="#v2v">V2V <span>08</span></a></nav></div></div>
+    <section class="section gallery-section soft" id="t2v">
       <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow">01 / TEXT-DIRECTED CAMERA GENERATION</p><h2>Long takes</h2><p class="section-description">Continuous camera motion across an extended cinematic moment.</p></div><span class="count">04 <span>DEMOS</span></span></div>
-        <div class="demo-grid long-grid" id="long-grid"></div>
-      </div>
-    </section>
-    <section class="section gallery-section soft" id="short-shots">
-      <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow">02 / TEXT-DIRECTED CAMERA GENERATION</p><h2>Short shots</h2><p class="section-description">A closer look at individual camera movements and compositions.</p></div><span class="count">16 <span>DEMOS</span></span></div>
-        <div class="demo-grid compact-grid" id="short-grid"></div>
+        <div class="section-heading"><div><p class="eyebrow">01 / TEXT-DIRECTED CAMERA GENERATION</p><h2>Text-to-video (T2V)</h2><p class="section-description">Turn natural-language cinematographic instructions into camera motion in 3D scenes.</p></div><span class="count">20 <span>DEMOS</span></span></div>
+        <div class="demo-grid compact-grid" id="t2v-grid"></div>
       </div>
     </section>
     <section class="section gallery-section" id="v2v">
       <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow">03 / REFERENCE VIDEO-DIRECTED CAMERA GENERATION</p><h2>Video-to-video</h2><p class="section-description">Compare each original reference video with the FilmFlow result in a target 3D scene.</p></div><span class="count">08 <span>DEMOS</span></span></div>
+        <div class="section-heading"><div><p class="eyebrow">02 / REFERENCE VIDEO-DIRECTED CAMERA GENERATION</p><h2>Video-to-video (V2V)</h2><p class="section-description">Compare each original reference video with the FilmFlow result in a target 3D scene.</p></div><span class="count">08 <span>DEMOS</span></span></div>
         <div class="demo-grid comparison-grid" id="v2v-grid"></div>
       </div>
     </section>
@@ -87,6 +81,6 @@
     <section class="section resources" id="resources"><div class="wrap"><p class="eyebrow">EXPLORE THE RESEARCH</p><h2>Resources</h2><div class="resource-grid"><a class="resource-item" href="assets/filmflow-paper.pdf" target="_blank" rel="noopener"><div><h3>Read the paper</h3><p>Framework, benchmark, and evaluation.</p></div><span aria-hidden="true">↗</span></a><div class="resource-item" id="code-resource"><div><h3>Code</h3><p>Release link to be added.</p></div><span class="status">Coming soon</span></div><div class="resource-item" id="dataset-resource"><div><h3>CinemaBench</h3><p>Scenes and camera-generation tasks.</p></div><span class="status">Coming soon</span></div></div></div></section>
   </main>
   <footer><div class="wrap footer-inner"><a class="wordmark" href="#top">FilmFlow</a><p>Agentic System for 3D Virtual Film Cinematography</p><a href="https://visionary-laboratory.github.io/PhotoFlow/" target="_blank" rel="noopener">Layout inspired by PhotoFlow ↗</a></div></footer>
-  <noscript><p class="noscript">Enable JavaScript to display the 4 long-take, 16 short-shot, and 8 video-to-video demo slots.</p></noscript>
+  <noscript><p class="noscript">Enable JavaScript to display the 20 T2V demos and 8 V2V reference/result pairs.</p></noscript>
 </body>
 </html>

@@ -7,14 +7,9 @@ window.FILMFLOW_CONTENT = {
   affiliations: "Paper under double-blind review",
   codeUrl: "",
   datasetUrl: "",
-  longTakes: Array.from({length: 4}, (_, i) => ({
-    id: `long-${String(i + 1).padStart(2, "0")}`,
-    title: `Long take ${String(i + 1).padStart(2, "0")}`,
-    src: "", poster: "", caption: ""
-  })),
-  shortShots: Array.from({length: 16}, (_, i) => ({
-    id: `short-${String(i + 1).padStart(2, "0")}`,
-    title: `Short shot ${String(i + 1).padStart(2, "0")}`,
+  t2v: Array.from({length: 20}, (_, i) => ({
+    id: `t2v-${String(i + 1).padStart(2, "0")}`,
+    title: `Text-to-video ${String(i + 1).padStart(2, "0")}`,
     src: "", poster: "", caption: ""
   })),
   v2v: Array.from({length: 8}, (_, i) => ({
@@ -24,7 +19,7 @@ window.FILMFLOW_CONTENT = {
     src: "", poster: "", caption: ""
   }))
 };
-// Example: FILMFLOW_CONTENT.longTakes[0].src = "assets/videos/long-01.mp4";
-// Example: FILMFLOW_CONTENT.longTakes[0].caption = "Your camera instruction.";
+// Example: FILMFLOW_CONTENT.t2v[0].src = "assets/videos/t2v-01.mp4";
+// Example: FILMFLOW_CONTENT.t2v[0].caption = "Your camera instruction.";
 // Example: FILMFLOW_CONTENT.v2v[0].referenceSrc = "assets/videos/reference-01.mp4";
 // Example: FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";

@@ -14,21 +14,19 @@ python3 -m http.server 8000
 
 ## Demo 布局
 
-- 长镜头：4 个空位，桌面端 2 × 2。
-- 短镜头：16 个空位，桌面端 4 × 4。
+- Text-to-video（T2V）：20 个空位，统一展示，桌面端 4 × 5。
 - Video-to-video：8 组对比示例，每组分别预留原视频与 FilmFlow 结果，共 16 个视频位。桌面端每行 2 组，共 4 行；组内左右并排。平板端每行 1 组；手机端原视频在上、结果在下。
-- 平板端 2 列，手机端 1 列；所有视频位保持 16:9。
+- T2V 平板端 2 列，手机端 1 列；所有视频位保持 16:9。
 
 ## 替换视频和文字
 
 统一编辑 `content.js`。视频放到 `assets/videos/`。在配置末尾添加：
 
 ```js
-FILMFLOW_CONTENT.longTakes[0].src = "assets/videos/long-01.mp4";
-FILMFLOW_CONTENT.longTakes[0].poster = "assets/long-01.jpg"; // 可选
-FILMFLOW_CONTENT.longTakes[0].title = "A continuous reveal";
-FILMFLOW_CONTENT.longTakes[0].caption = "镜头提示词或说明";
-FILMFLOW_CONTENT.shortShots[0].src = "assets/videos/short-01.mp4";
+FILMFLOW_CONTENT.t2v[0].src = "assets/videos/t2v-01.mp4";
+FILMFLOW_CONTENT.t2v[0].poster = "assets/t2v-01.jpg"; // 可选
+FILMFLOW_CONTENT.t2v[0].title = "A continuous reveal";
+FILMFLOW_CONTENT.t2v[0].caption = "镜头提示词或说明";
 FILMFLOW_CONTENT.v2v[0].referenceSrc = "assets/videos/reference-01.mp4";
 FILMFLOW_CONTENT.v2v[0].referencePoster = "assets/reference-01.jpg"; // 可选
 FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";

@@ -91,8 +91,7 @@
       grid.append(card);
     });
   }
-  renderGallery("long-grid", content.longTakes);
-  renderGallery("short-grid", content.shortShots);
+  renderGallery("t2v-grid", content.t2v);
   renderGallery("v2v-grid", content.v2v, true);
 
   for (const [id, url] of [["code-resource", content.codeUrl], ["dataset-resource", content.datasetUrl]]) {
