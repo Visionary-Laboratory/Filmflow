@@ -24,8 +24,8 @@
 /* Keep the four long takes larger within the same T2V gallery. */
 @media(min-width:901px){#t2v-grid .demo-wide{grid-column:span 2}#t2v-grid .demo-wide .demo-meta h3{font-size:14px}}
 
-/* Reserve readable input text beneath every T2V example, including empty slots. */
-.demo-prompt{margin-top:12px;padding:14px 16px;min-height:104px;border:1px solid var(--line);border-radius:8px;background:#fff}
+/* Reserve readable input text above every T2V example, including empty slots. */
+.demo-prompt{margin-bottom:12px;padding:14px 16px;min-height:104px;border:1px solid var(--line);border-radius:8px;background:#fff}
 .prompt-label{display:block;font:600 10px var(--mono);letter-spacing:1px;text-transform:uppercase;color:var(--blue)}
 .prompt-text{margin:8px 0 0;font-size:13px;line-height:1.7;color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere}
 .prompt-empty{color:#7c8795}
