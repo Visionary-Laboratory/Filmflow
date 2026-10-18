@@ -54,6 +54,7 @@
     items.forEach(item => {
       const card = document.createElement("article");
       card.className = comparison ? "demo-card comparison-card" : "demo-card";
+      if (!comparison && item.wide) card.classList.add("demo-wide");
       card.id = item.id;
       const meta = document.createElement("div");
       meta.className = "demo-meta";

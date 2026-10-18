@@ -20,3 +20,6 @@
 .comparison-card .demo-caption{margin-top:14px}
 @media(max-width:900px){.comparison-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.comparison-card{padding:16px}.comparison-pair{grid-template-columns:1fr;gap:18px}.comparison-label{font-size:12px}.comparison-card .placeholder-label{font-size:11px}}
+
+/* Keep the four long takes larger within the same T2V gallery. */
+@media(min-width:901px){#t2v-grid .demo-wide{grid-column:span 2}#t2v-grid .demo-wide .demo-meta h3{font-size:14px}}

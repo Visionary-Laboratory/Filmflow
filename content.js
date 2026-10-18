@@ -10,6 +10,7 @@ window.FILMFLOW_CONTENT = {
   t2v: Array.from({length: 20}, (_, i) => ({
     id: `t2v-${String(i + 1).padStart(2, "0")}`,
     title: `Text-to-video ${String(i + 1).padStart(2, "0")}`,
+    wide: i < 4, // The first four long takes use larger frames in the shared T2V gallery.
     src: "", poster: "", caption: ""
   })),
   v2v: Array.from({length: 8}, (_, i) => ({
