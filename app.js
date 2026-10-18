@@ -87,8 +87,14 @@
         card.append(meta, pair);
       } else {
         card.append(createMediaFrame({...item, groupId: item.id}), meta);
+        const prompt = document.createElement("div");
+        prompt.className = "demo-prompt";
+        prompt.append(text("span", "prompt-label", "Input prompt"));
+        prompt.append(text("p", item.caption ? "prompt-text" : "prompt-text prompt-empty",
+          item.caption || "Camera instruction to be added."));
+        card.append(prompt);
       }
-      if (item.caption) card.append(text("p", "demo-caption", item.caption));
+      if (comparison && item.caption) card.append(text("p", "demo-caption", item.caption));
       grid.append(card);
     });
   }
