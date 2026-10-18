@@ -42,7 +42,7 @@ FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";
 
 - `assets/filmflow-paper.pdf`：论文副本。
 - `assets/teaser.png`：使用用户指定的 `teaser_v14.png` 原图。
-- `assets/method.png`：从 `FilmFlow_design_v4.pdf` 渲染。
+- `assets/method.png`：从用户指定的 `FilmFlow_design_v17.pdf` 以 2 倍分辨率渲染；点击网页方法图可打开原始 PDF（`assets/filmflow-method.pdf`）。
 - 论文摘要在网页中做了精简，保留方法和 CinemaBench 的 150 / 750 / 60 数据，不添加未核实的结果。
 
 仓库根目录可直接作为静态托管根目录，兼容 GitHub Pages 子路径。网站源码独立于 FilmFlow 的运行代码和环境配置。
