@@ -11,54 +11,89 @@
   document.getElementById("authors").textContent = content.authors;
   document.getElementById("affiliations").textContent = content.affiliations;
 
-  function renderGallery(target, items) {
+  function createMediaFrame({src, poster, title, id, groupId, placeholder}) {
+    const frame = document.createElement("div");
+    frame.className = "demo-frame";
+    if (src) {
+      const video = document.createElement("video");
+      video.controls = true;
+      video.playsInline = true;
+      video.preload = "none";
+      video.dataset.playbackGroup = groupId;
+      video.setAttribute("aria-label", title);
+      if (poster) video.poster = poster;
+      video.src = src;
+      video.addEventListener("play", () => {
+        // A reference and its result may play together; pause other examples.
+        document.querySelectorAll("video").forEach(other => {
+          if (other.dataset.playbackGroup !== groupId) other.pause();
+        });
+      });
+      video.addEventListener("error", () => {
+        if (frame.querySelector(".media-error")) return;
+        const error = text("div", "media-error", "Video unavailable. Please check the media file.");
+        error.setAttribute("role", "status");
+        frame.append(error);
+      });
+      frame.append(video);
+    } else {
+      const inner = document.createElement("div");
+      inner.className = "placeholder-inner";
+      const icon = text("span", "frame-icon", "");
+      icon.setAttribute("aria-hidden", "true");
+      inner.append(icon, text("span", "placeholder-label", placeholder || "VIDEO COMING SOON"));
+      frame.append(text("span", "slot-corner", id.toUpperCase()), inner, text("span", "aspect-label", "16:9"));
+      frame.setAttribute("role", "img");
+      frame.setAttribute("aria-label", `${title}: empty video slot`);
+    }
+    return frame;
+  }
+
+  function renderGallery(target, items, comparison = false) {
     const grid = document.getElementById(target);
     items.forEach(item => {
       const card = document.createElement("article");
-      card.className = "demo-card";
+      card.className = comparison ? "demo-card comparison-card" : "demo-card";
       card.id = item.id;
-      const frame = document.createElement("div");
-      frame.className = "demo-frame";
-      if (item.src) {
-        const video = document.createElement("video");
-        video.controls = true;
-        video.playsInline = true;
-        video.preload = "none";
-        video.setAttribute("aria-label", item.title);
-        if (item.poster) video.poster = item.poster;
-        video.src = item.src;
-        video.addEventListener("play", () => {
-          document.querySelectorAll("video").forEach(other => { if (other !== video) other.pause(); });
-        });
-        video.addEventListener("error", () => {
-          if (frame.querySelector(".media-error")) return;
-          const error = text("div", "media-error", "Video unavailable. Please check the media file.");
-          error.setAttribute("role", "status");
-          frame.append(error);
-        });
-        frame.append(video);
-      } else {
-        const inner = document.createElement("div");
-        inner.className = "placeholder-inner";
-        const icon = text("span", "frame-icon", "");
-        icon.setAttribute("aria-hidden", "true");
-        inner.append(icon, text("span", "placeholder-label", "VIDEO COMING SOON"));
-        frame.append(text("span", "slot-corner", item.id.toUpperCase()), inner, text("span", "aspect-label", "16:9"));
-        frame.setAttribute("role", "img");
-        frame.setAttribute("aria-label", `${item.title}: empty video slot`);
-      }
       const meta = document.createElement("div");
       meta.className = "demo-meta";
-      meta.append(text("h3", "", item.title));
-      if (!item.src) meta.append(text("span", "demo-state", "To be added"));
-      card.append(frame, meta);
+      const heading = text("h3", "", item.title);
+      heading.id = `${item.id}-title`;
+      card.setAttribute("aria-labelledby", heading.id);
+      meta.append(heading);
+      if (!item.src && (!comparison || !item.referenceSrc)) {
+        meta.append(text("span", "demo-state", "To be added"));
+      }
+      if (comparison) {
+        const pair = document.createElement("div");
+        pair.className = "comparison-pair";
+        const panels = [
+          {label: "Reference video", src: item.referenceSrc, poster: item.referencePoster, suffix: "reference", placeholder: "ORIGINAL VIDEO"},
+          {label: "FilmFlow result", src: item.src, poster: item.poster, suffix: "result", placeholder: "FILMFLOW OUTPUT"}
+        ];
+        for (const panel of panels) {
+          const figure = document.createElement("figure");
+          figure.className = `comparison-panel ${panel.suffix}`;
+          figure.append(text("figcaption", "comparison-label", panel.label));
+          figure.append(createMediaFrame({
+            src: panel.src, poster: panel.poster,
+            title: `${item.title} — ${panel.label}`,
+            id: `${item.id}-${panel.suffix}`, groupId: item.id,
+            placeholder: panel.placeholder
+          }));
+          pair.append(figure);
+        }
+        card.append(meta, pair);
+      } else {
+        card.append(createMediaFrame({...item, groupId: item.id}), meta);
+      }
       if (item.caption) card.append(text("p", "demo-caption", item.caption));
       grid.append(card);
     });
   }
   renderGallery("long-grid", content.longTakes);
   renderGallery("short-grid", content.shortShots);
-  renderGallery("v2v-grid", content.v2v);
+  renderGallery("v2v-grid", content.v2v, true);
 
   for (const [id, url] of [["code-resource", content.codeUrl], ["dataset-resource", content.datasetUrl]]) {
     if (!url) continue;

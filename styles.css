@@ -4,3 +4,19 @@
 @media(max-width:900px){.compact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.agent-roles{gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}.benchmark-layout{gap:30px;grid-template-columns:1fr}.resource-grid{gap:24px}.status{font-size:8px}.footer-inner{flex-wrap:wrap}.desktop-break{display:none}h1{max-width:760px}.demo-label{display:none}.demo-nav-inner{justify-content:center}.resource-item{flex-wrap:wrap}}
 @media(max-width:560px){.wrap{width:calc(100% - 36px)}.nav{height:62px}.nav-links{gap:15px;font-size:11px}.nav-links a:first-child{display:none}.wordmark{font-size:20px}.brand-mark{width:25px;height:25px;font-size:16px}.hero{padding-top:40px}h1{font-size:32px;letter-spacing:-1.1px}.subtitle{font-size:16px}.resource-buttons{gap:7px;margin-bottom:30px}.button{padding:8px 12px;font-size:11px;min-height:42px}.teaser{padding:0 0 22px}.teaser figcaption{font-size:11px}.teaser figcaption span{display:block;margin-top:4px}.section{padding:46px 0}.eyebrow{font-size:9px;letter-spacing:1.5px}.abstract{font-size:14px;line-height:1.85}h2{font-size:27px}.lead{font-size:13px}.method-figure{padding:4px 6px 12px;border-radius:7px}.method-figure figcaption{font-size:10px;padding:0 8px}.agent-roles{gap:23px 16px}.agent-roles h3{font-size:13px}.agent-roles p{font-size:12px}.demo-nav-inner{min-height:58px}.demo-nav nav{gap:20px;justify-content:space-between;width:100%}.demo-nav a{font-size:11px;padding:17px 0}.demo-nav a span{font-size:9px;margin-left:2px}.section-heading{align-items:flex-start;gap:14px}.section-heading .eyebrow{font-size:8px;letter-spacing:1px}.section-description{font-size:13px}.count{font-size:24px}.count span{font-size:8px}.long-grid,.compact-grid{grid-template-columns:1fr}.demo-grid{gap:24px}.demo-meta h3,.long-grid .demo-meta h3{font-size:13px}.placeholder-label{font-size:11px}.stats{gap:10px}.stats div{padding-left:12px}.stats dt{font-size:32px}.stats dd{font-size:10px}.resource-grid{grid-template-columns:1fr;gap:0}.resource-item{flex-wrap:nowrap}.footer-inner{gap:10px}.footer-inner p{width:100%;margin:0}.footer-inner>a:last-child{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Eight V2V examples, each with an original reference and a generated result. */
+.comparison-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.comparison-card{padding:18px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.comparison-card>.demo-meta{padding:0 0 16px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.comparison-card .demo-meta h3{font-size:14px}
+.comparison-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.comparison-panel{min-width:0}
+.comparison-label{text-align:left;font-size:11px;font-weight:600;color:var(--muted);margin-bottom:9px}
+.comparison-panel.result .comparison-label{color:var(--blue)}
+.comparison-panel.result .demo-frame{background:#edf3fb;border-color:#d7e3f3}
+.comparison-card .placeholder-label{font-size:9px;letter-spacing:.8px}
+.comparison-card .slot-corner{font-size:8px;top:9px;left:10px}
+.comparison-card .demo-caption{margin-top:14px}
+@media(max-width:900px){.comparison-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.comparison-card{padding:16px}.comparison-pair{grid-template-columns:1fr;gap:18px}.comparison-label{font-size:12px}.comparison-card .placeholder-label{font-size:11px}}

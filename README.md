@@ -16,7 +16,7 @@ python3 -m http.server 8000
 
 - 长镜头：4 个空位，桌面端 2 × 2。
 - 短镜头：16 个空位，桌面端 4 × 4。
-- Video-to-video：8 个空位，桌面端 4 × 2。
+- Video-to-video：8 组对比示例，每组分别预留原视频与 FilmFlow 结果，共 16 个视频位。桌面端每行 2 组，共 4 行；组内左右并排。平板端每行 1 组；手机端原视频在上、结果在下。
 - 平板端 2 列，手机端 1 列；所有视频位保持 16:9。
 
 ## 替换视频和文字
@@ -29,10 +29,12 @@ FILMFLOW_CONTENT.longTakes[0].poster = "assets/long-01.jpg"; // 可选
 FILMFLOW_CONTENT.longTakes[0].title = "A continuous reveal";
 FILMFLOW_CONTENT.longTakes[0].caption = "镜头提示词或说明";
 FILMFLOW_CONTENT.shortShots[0].src = "assets/videos/short-01.mp4";
+FILMFLOW_CONTENT.v2v[0].referenceSrc = "assets/videos/reference-01.mp4";
+FILMFLOW_CONTENT.v2v[0].referencePoster = "assets/reference-01.jpg"; // 可选
 FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";
 ```
 
-数组使用从 0 开始的索引。未设置 `src` 的空位不发起视频请求，也不会显示虚假播放按钮。填写 `src` 后自动显示原生视频播放器；播放新视频会暂停其他视频。V2V 可以填入包含参考和结果对比的完整视频，仍保持总计 8 个展示位。
+数组使用从 0 开始的索引。未设置 `src` 的空位不发起视频请求，也不会显示虚假播放按钮。填写 `src` 后自动显示原生视频播放器；播放新示例会暂停其他示例的视频；同一 V2V 组的原视频与结果可以分别控制、同时播放。`referenceSrc` 配置原视频，`src` 配置结果，两侧都可以独立留空。
 
 同一配置中可设置 `authors`、`affiliations`、`codeUrl` 和 `datasetUrl`。没有公开地址的资源显示 Coming soon。
 
