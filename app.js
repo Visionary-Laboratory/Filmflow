@@ -27,11 +27,13 @@
       const video = document.createElement("video");
       video.controls = true;
       video.playsInline = true;
+      video.defaultMuted = true;
+      video.muted = true;
       video.preload = "none";
       video.dataset.playbackGroup = groupId;
       video.setAttribute("aria-label", title);
       if (poster) video.poster = poster;
-      video.src = src;
+      video.src = src + (src.includes("?") ? "&" : "?") + "v=silent-20261022";
       video.addEventListener("play", () => {
         // A reference and its result may play together; pause other examples.
         document.querySelectorAll("video").forEach(other => {

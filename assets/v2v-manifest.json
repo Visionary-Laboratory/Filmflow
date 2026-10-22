@@ -8,8 +8,10 @@
       "files": {
         "referenceSrc": {
           "path": "assets/videos/v2v/vertigo-car-reference.mp4",
-          "sha256": "d977f0956c40b352e641fd2f830554b833de4917fc8fe43167b44d88e2349f52",
-          "archive_file": "reference.mp4"
+          "sha256": "e5667dadd4e703c2b8308777256a28c6636ee56466db43f7ef8d8da5cd332c8c",
+          "archive_file": "reference.mp4",
+          "archive_sha256": "d977f0956c40b352e641fd2f830554b833de4917fc8fe43167b44d88e2349f52",
+          "website_transform": "audio track removed; video stream copied without re-encoding"
         },
         "src": {
           "path": "assets/videos/v2v/vertigo-car-color.mp4",
@@ -44,8 +46,10 @@
       "files": {
         "referenceSrc": {
           "path": "assets/videos/v2v/gump01-reference.mp4",
-          "sha256": "c1d53619a881c30c84e111f5bcb6ccb3904478ee18f89a87120f4bb23806f35e",
-          "archive_file": "reference.mp4"
+          "sha256": "e40e112007d02d64718dd4d0058ac7f49fdd2587bdf8f8a8727b68e15b718065",
+          "archive_file": "reference.mp4",
+          "archive_sha256": "c1d53619a881c30c84e111f5bcb6ccb3904478ee18f89a87120f4bb23806f35e",
+          "website_transform": "audio track removed; video stream copied without re-encoding"
         },
         "src": {
           "path": "assets/videos/v2v/gump01-color.mp4",
@@ -62,8 +66,10 @@
       "files": {
         "referenceSrc": {
           "path": "assets/videos/v2v/notorious-reference.mp4",
-          "sha256": "092d8477b9a4ebe9ee935f3553d842e5dd460a5f868803ab4665a52ce8884751",
-          "archive_file": "reference.mp4"
+          "sha256": "db0e9e32bec94c117ee77a37c3c65f8db966c159c1987c497ac1cda958090b87",
+          "archive_file": "reference.mp4",
+          "archive_sha256": "092d8477b9a4ebe9ee935f3553d842e5dd460a5f868803ab4665a52ce8884751",
+          "website_transform": "audio track removed; video stream copied without re-encoding"
         },
         "src": {
           "path": "assets/videos/v2v/notorious-color.mp4",
@@ -101,8 +107,10 @@
       "files": {
         "referenceSrc": {
           "path": "assets/videos/v2v/coffee-clip02-reference.mp4",
-          "sha256": "9461cd811bdb2ceb73684f1725e872b2450a512ecf590ddb39516be1dc7337f1",
-          "archive_file": "reference.mp4"
+          "sha256": "225eef7b335eb37ddf7eacc18dcb2b53160fc5dfa1e25495b9420d037e9c33c0",
+          "archive_file": "reference.mp4",
+          "archive_sha256": "9461cd811bdb2ceb73684f1725e872b2450a512ecf590ddb39516be1dc7337f1",
+          "website_transform": "audio track removed; video stream copied without re-encoding"
         },
         "src": {
           "path": "assets/videos/v2v/coffee-clip02-color.mp4",
@@ -114,5 +122,6 @@
       "source_url": "https://www.youtube.com/watch?v=SR__amDl1c8",
       "source_evidence": "Matched original opening bicycle/storefront shot to coffee_clip02; Forrain, published 2023-10-16."
     }
-  ]
+  ],
+  "audio": "all displayed videos have no audio tracks"
 }
