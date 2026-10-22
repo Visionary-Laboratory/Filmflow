@@ -61,3 +61,7 @@ GitHub Pages 地址：https://visionary-laboratory.github.io/Filmflow/
 ## V2V 标题与播放
 
 六组标题显示来源影片及年份。每组的 `Play both` 按钮先对齐播放位置，再同时播放原片与结果；播放时可用 `Pause both` 同时暂停。保留两侧播放器的独立控制，不显示组下方说明。影片出处与核对依据记录在 `assets/v2v-manifest.json`；coffee_clip02 来自 [2 AM Coffee (2023)](https://www.youtube.com/watch?v=SR__amDl1c8)。
+
+## 展示说明与文字强调
+
+T2V/V2V 小标题正下方分别解释任务和观看方式。`t2vHighlights` 只指定网页显示时加粗的短语，原 `caption` 文本保持不变；管线输入不添加标记。V2V 说明同时播放及暂停按钮的用法。

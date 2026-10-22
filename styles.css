@@ -49,3 +49,6 @@
 .affiliations{display:flex;flex-wrap:wrap;justify-content:center;gap:3px 22px;max-width:850px;margin:0 auto;font-size:13px}
 .affiliation sup{margin-right:3px}
 @media(max-width:700px){.authors{grid-template-columns:repeat(2,max-content);gap:5px 20px;font-size:14px}.affiliations{flex-direction:column;font-size:12px}}
+
+.demo-explanation{max-width:960px;line-height:1.8}
+.prompt-text strong{font-weight:750;color:var(--ink)}

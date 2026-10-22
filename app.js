@@ -120,6 +120,30 @@
     meta.append(button);
   }
 
+  function renderInstruction(item) {
+    const value = item.caption || "Camera instruction to be added.";
+    const paragraph = text("p", item.caption ? "prompt-text" : "prompt-text prompt-empty", "");
+    const ranges = [];
+    const lower = value.toLowerCase();
+    // Highlight only in the presentation DOM; keep the source instruction unchanged.
+    for (const phrase of content.t2vHighlights?.[item.id] || []) {
+      const needle = phrase.toLowerCase();
+      if (!needle) continue;
+      for (let start = lower.indexOf(needle); start !== -1; start = lower.indexOf(needle, start + needle.length)) {
+        ranges.push({start, end: start + needle.length});
+      }
+    }
+    ranges.sort((a, b) => a.start - b.start || b.end - a.end);
+    let cursor = 0;
+    for (const {start, end} of ranges) {
+      if (start < cursor) continue;
+      paragraph.append(document.createTextNode(value.slice(cursor, start)), text("strong", "", value.slice(start, end)));
+      cursor = end;
+    }
+    paragraph.append(document.createTextNode(value.slice(cursor)));
+    return paragraph;
+  }
+
   function renderGallery(target, items, comparison = false) {
     const grid = document.getElementById(target);
     items.forEach(item => {
@@ -161,8 +185,7 @@
         const prompt = document.createElement("div");
         prompt.className = "demo-prompt";
         prompt.append(text("span", "prompt-label", "Input prompt"));
-        prompt.append(text("p", item.caption ? "prompt-text" : "prompt-text prompt-empty",
-          item.caption || "Camera instruction to be added."));
+        prompt.append(renderInstruction(item));
         card.append(prompt, createMediaFrame({...item, groupId: item.id}), meta);
       }
       grid.append(card);

@@ -7,6 +7,118 @@ window.FILMFLOW_CONTENT = {
   affiliations: [{"name": "Cornell University", "marks": "1"}, {"name": "Shanghai Jiao Tong University", "marks": "2"}, {"name": "University of California, Los Angeles", "marks": "3"}, {"name": "Shanghai Artificial Intelligence Laboratory", "marks": "4"}],
   codeUrl: "",
   datasetUrl: "",
+  t2vHighlights: {
+  "t2v-01": [
+    "Circle continuously",
+    "Keep moving",
+    "successively reveal",
+    "facial close-up"
+  ],
+  "t2v-02": [
+    "Orbit around",
+    "slow rotation",
+    "easing toward the end"
+  ],
+  "t2v-03": [
+    "Follow",
+    "roll upside down",
+    "pass through the doorway",
+    "recover upright",
+    "overtake",
+    "front three-quarter view"
+  ],
+  "t2v-04": [
+    "focused on the sun",
+    "lower the view",
+    "pull focus",
+    "Approach",
+    "overtake",
+    "turn back",
+    "tracking in front"
+  ],
+  "t2v-05": [
+    "Follow behind",
+    "move around to the front",
+    "finish facing the child"
+  ],
+  "t2v-06": [
+    "Descend",
+    "Turn smoothly to follow",
+    "stable framing target"
+  ],
+  "t2v-07": [
+    "Descend and approach",
+    "track backward in front",
+    "at close range"
+  ],
+  "t2v-08": [
+    "Follow",
+    "gradually pull away",
+    "move to one side",
+    "wide oblique view"
+  ],
+  "t2v-09": [
+    "move toward",
+    "zooming out",
+    "Keep the car’s size steady"
+  ],
+  "t2v-10": [
+    "move away",
+    "zooming in",
+    "Keep the car’s size steady"
+  ],
+  "t2v-11": [
+    "Circle right",
+    "moving closer",
+    "Keep both faces visible",
+    "no pause between movements"
+  ],
+  "t2v-12": [
+    "Orbit about 90 degrees",
+    "left to right",
+    "pulling noticeably farther away",
+    "Keep the people and balcony in view"
+  ],
+  "t2v-13": [
+    "pan and tilt",
+    "hold the final composition"
+  ],
+  "t2v-14": [
+    "tilt upward",
+    "finish on the face",
+    "Hold the final portrait steadily"
+  ],
+  "t2v-15": [
+    "Slowly push",
+    "face close-up",
+    "Keep him centered",
+    "focal length fixed"
+  ],
+  "t2v-16": [
+    "Pull straight back",
+    "wide view",
+    "Keep the subject centered"
+  ],
+  "t2v-17": [
+    "Keep the camera in one place",
+    "pan right"
+  ],
+  "t2v-18": [
+    "Keep the camera fixed",
+    "tilt down",
+    "constant focal length"
+  ],
+  "t2v-19": [
+    "Move sideways",
+    "steadily pushing",
+    "constant height and focal length"
+  ],
+  "t2v-20": [
+    "Raise the camera vertically",
+    "tilting down",
+    "Keep the figure readable"
+  ]
+},
   t2v: Array.from({length: 20}, (_, i) => ({
     id: `t2v-${String(i + 1).padStart(2, "0")}`,
     title: `Text-to-video ${String(i + 1).padStart(2, "0")}`,
