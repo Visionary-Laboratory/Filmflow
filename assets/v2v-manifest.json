@@ -1,5 +1,5 @@
 {
-  "approved_color_cases": 6,
+  "approved_color_cases": 8,
   "layout": "reference_left_color_right",
   "cases": [
     {
@@ -94,6 +94,38 @@
         "src": {
           "path": "assets/videos/v2v/kill-bill-color.mp4",
           "sha256": "3538409d096ca4224334c178e9e12b9aa57d963acc696f50f90f7865afb2e3de",
+          "archive_file": "demo.mp4"
+        }
+      }
+    },
+    {
+      "slot": "v2v-07",
+      "archive": "v2v_04_coffee_clip02_scene01_20261021",
+      "files": {
+        "referenceSrc": {
+          "path": "assets/videos/v2v/coffee-clip02-reference.mp4",
+          "sha256": "9461cd811bdb2ceb73684f1725e872b2450a512ecf590ddb39516be1dc7337f1",
+          "archive_file": "reference.mp4"
+        },
+        "src": {
+          "path": "assets/videos/v2v/coffee-clip02-color.mp4",
+          "sha256": "c3baed74df88c27bc1b99b3f94d64a05805d798d757105f24ac986458f1f96bc",
+          "archive_file": "demo.mp4"
+        }
+      }
+    },
+    {
+      "slot": "v2v-08",
+      "archive": "v2v_08_30_scene02_20261021",
+      "files": {
+        "referenceSrc": {
+          "path": "assets/videos/v2v/titanic-reference.mp4",
+          "sha256": "b854a61a08d80f6923c32a0eda0822ae5b35a83124a9f4d71b6c6536ea3fa72f",
+          "archive_file": "reference.mp4"
+        },
+        "src": {
+          "path": "assets/videos/v2v/titanic-color.mp4",
+          "sha256": "2d692485a60900f2afe33125713a4d8a341f67e6bf7d61de0fc7da86cf6f50a7",
           "archive_file": "demo.mp4"
         }
       }

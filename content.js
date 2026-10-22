@@ -70,21 +70,21 @@ window.FILMFLOW_CONTENT = {
   },
   {
     "id": "v2v-07",
-    "title": "Video-to-video 07",
-    "referenceSrc": "",
-    "referencePoster": "",
-    "src": "",
-    "poster": "",
-    "caption": ""
+    "title": "coffee_clip02",
+    "caption": "Front-to-rear tracking through a corridor.",
+    "referenceSrc": "assets/videos/v2v/coffee-clip02-reference.mp4",
+    "referencePoster": "assets/posters/v2v/coffee-clip02-reference.jpg",
+    "src": "assets/videos/v2v/coffee-clip02-color.mp4",
+    "poster": "assets/posters/v2v/coffee-clip02-color.jpg"
   },
   {
     "id": "v2v-08",
-    "title": "Video-to-video 08",
-    "referenceSrc": "",
-    "referencePoster": "",
-    "src": "",
-    "poster": "",
-    "caption": ""
+    "title": "30 · Titanic",
+    "caption": "A continuous orbit around a stationary pair.",
+    "referenceSrc": "assets/videos/v2v/titanic-reference.mp4",
+    "referencePoster": "assets/posters/v2v/titanic-reference.jpg",
+    "src": "assets/videos/v2v/titanic-color.mp4",
+    "poster": "assets/posters/v2v/titanic-color.jpg"
   }
 ]
 };
