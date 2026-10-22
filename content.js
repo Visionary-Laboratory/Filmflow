@@ -163,8 +163,8 @@ window.FILMFLOW_CONTENT = {
     "title": "Prisoners (2013)",
     "referenceSrc": "assets/videos/v2v/pan01-reference.mp4",
     "referencePoster": "assets/posters/v2v/pan01-reference.jpg",
-    "src": "assets/videos/v2v/pan01-color.mp4",
-    "poster": "assets/posters/v2v/pan01-color.jpg"
+    "src": "assets/videos/v2v/pan01-courtyard-color.mp4",
+    "poster": "assets/posters/v2v/pan01-courtyard-color.jpg"
   },
   {
     "id": "v2v-07",

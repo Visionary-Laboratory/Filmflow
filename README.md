@@ -65,3 +65,5 @@ GitHub Pages 地址：https://visionary-laboratory.github.io/Filmflow/
 ## 展示说明与文字强调
 
 T2V/V2V 小标题正下方分别解释任务和观看方式。`t2vHighlights` 只指定网页显示时加粗的短语，原 `caption` 文本保持不变；管线输入不添加标记。V2V 说明同时播放及暂停按钮的用法。
+
+Prisoners (2013) 已替换为用户确认的场景 27 庭院版本，原灰模运镜和人物动画保持不变；彩色归档为 `v2v_06_pan01_scene27_20261021`。旧场景 04 归档保留。

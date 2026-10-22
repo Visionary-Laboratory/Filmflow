@@ -76,7 +76,7 @@
     },
     {
       "slot": "v2v-05",
-      "archive": "v2v_06_pan01_scene04_20261021",
+      "archive": "v2v_06_pan01_scene27_20261021",
       "files": {
         "referenceSrc": {
           "path": "assets/videos/v2v/pan01-reference.mp4",
@@ -84,13 +84,16 @@
           "archive_file": "reference.mp4"
         },
         "src": {
-          "path": "assets/videos/v2v/pan01-color.mp4",
-          "sha256": "674c3314b5af4bf539a25956540dc2dc47000bb8752bae7382769ea5d2c0bcad",
+          "path": "assets/videos/v2v/pan01-courtyard-color.mp4",
+          "sha256": "e302fa295cf16d01fa68feb27800e42c5bad0fa012f25f3dbedd9c1485830cf6",
           "archive_file": "demo.mp4"
         }
       },
       "source_film": "Prisoners (2013)",
-      "source_evidence": "Film title and year visible in reference video watermark."
+      "source_evidence": "Film title and year visible in reference video watermark.",
+      "previous_archive": "v2v_06_pan01_scene04_20261021",
+      "target_scene": "27 — apartment courtyard",
+      "gray_approved": true
     },
     {
       "slot": "v2v-07",
