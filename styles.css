@@ -39,3 +39,5 @@
 .pair-play-button:focus-visible{outline:3px solid #90b5ff;outline-offset:3px}
 .pair-play-button:disabled{cursor:wait;opacity:.65}
 .pair-play-button[aria-pressed="true"]{background:var(--blue);color:white}
+
+.button[aria-disabled="true"],.button[aria-disabled="true"]:hover{color:var(--muted);background:#fff;transform:none;cursor:default}

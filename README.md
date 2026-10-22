@@ -41,7 +41,7 @@ FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";
 
 页面文案来自相邻 `iclr_files/8246.pdf`（FilmFlow 论文）；当前论文为匿名审稿版本，因此保留 Anonymous authors，不推测作者和机构。
 
-- `assets/filmflow-paper.pdf`：论文副本。
+- Paper 入口显示 Coming soon，网站不包含论文 PDF。
 - `assets/teaser.png`：使用用户指定的 `teaser_v14.png` 原图。
 - `assets/method.png`：从用户指定的 `FilmFlow_design_v17.pdf` 以 2 倍分辨率渲染；点击网页方法图可打开原始 PDF（`assets/filmflow-method.pdf`）。
 - 论文摘要在网页中做了精简，保留方法和 CinemaBench 的 150 / 750 / 60 数据，不添加未核实的结果。
