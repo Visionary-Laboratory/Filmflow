@@ -50,9 +50,9 @@ FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";
 
 ## 发布
 
-GitHub Pages 目标地址：https://visionary-laboratory.github.io/Filmflow/
+GitHub Pages 地址：https://visionary-laboratory.github.io/Filmflow/
 
-当前 GitHub 设置提示：私有仓库需要支持 Pages 的套餐或改为公开后才能启用。分支推送本身不代表网站已上线。
+仓库已公开，GitHub Pages 使用 `gh-pages` 分支根目录自动部署。
 
 使用 `gh-pages` 分支根目录发布。修改完成后提交并推送该分支。
 
