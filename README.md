@@ -57,3 +57,7 @@ GitHub Pages 地址：https://visionary-laboratory.github.io/Filmflow/
 ## 已归档 V2V 彩色示例
 
 已填入 8 组：13、arc01、gump01、07、pan01、28、coffee_clip02、30（Titanic）。每组原视频在左、彩色结果在右。`assets/v2v-manifest.json` 记录归档来源与视频 SHA-256；视频为归档文件的原样副本。八个位置均已填入已批准的彩色视频。
+
+## V2V 标题与播放
+
+八组标题显示来源影片及年份。每组的 `Play both` 按钮先对齐播放位置，再同时播放原片与结果；播放时可用 `Pause both` 同时暂停。保留两侧播放器的独立控制，不显示组下方说明。影片出处与核对依据记录在 `assets/v2v-manifest.json`；coffee_clip02 来自 [2 AM Coffee (2023)](https://www.youtube.com/watch?v=SR__amDl1c8)。

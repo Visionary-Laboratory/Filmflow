@@ -16,8 +16,7 @@ window.FILMFLOW_CONTENT = {
   v2v: [
   {
     "id": "v2v-01",
-    "title": "13 · Vertigo",
-    "caption": "Orbit around a stationary car.",
+    "title": "Vertigo (1958)",
     "referenceSrc": "assets/videos/v2v/vertigo-car-reference.mp4",
     "referencePoster": "assets/posters/v2v/vertigo-car-reference.jpg",
     "src": "assets/videos/v2v/vertigo-car-color.mp4",
@@ -25,8 +24,7 @@ window.FILMFLOW_CONTENT = {
   },
   {
     "id": "v2v-02",
-    "title": "arc01",
-    "caption": "An overhead camera move around a seated group.",
+    "title": "The Cell (2000)",
     "referenceSrc": "assets/videos/v2v/arc01-group-reference.mp4",
     "referencePoster": "assets/posters/v2v/arc01-group-reference.jpg",
     "src": "assets/videos/v2v/arc01-group-color.mp4",
@@ -34,8 +32,7 @@ window.FILMFLOW_CONTENT = {
   },
   {
     "id": "v2v-03",
-    "title": "gump01",
-    "caption": "A gradual approach toward a seated subject.",
+    "title": "Forrest Gump (1994)",
     "referenceSrc": "assets/videos/v2v/gump01-reference.mp4",
     "referencePoster": "assets/posters/v2v/gump01-reference.jpg",
     "src": "assets/videos/v2v/gump01-color.mp4",
@@ -43,8 +40,7 @@ window.FILMFLOW_CONTENT = {
   },
   {
     "id": "v2v-04",
-    "title": "07 · Notorious",
-    "caption": "Crane down and push in toward the hands.",
+    "title": "Notorious (1946)",
     "referenceSrc": "assets/videos/v2v/notorious-reference.mp4",
     "referencePoster": "assets/posters/v2v/notorious-reference.jpg",
     "src": "assets/videos/v2v/notorious-color.mp4",
@@ -52,8 +48,7 @@ window.FILMFLOW_CONTENT = {
   },
   {
     "id": "v2v-05",
-    "title": "pan01",
-    "caption": "Pan to follow a passing runner.",
+    "title": "Prisoners (2013)",
     "referenceSrc": "assets/videos/v2v/pan01-reference.mp4",
     "referencePoster": "assets/posters/v2v/pan01-reference.jpg",
     "src": "assets/videos/v2v/pan01-color.mp4",
@@ -61,8 +56,7 @@ window.FILMFLOW_CONTENT = {
   },
   {
     "id": "v2v-06",
-    "title": "28 · Kill Bill",
-    "caption": "Overhead tracking of a moving subject.",
+    "title": "Kill Bill: Vol. 1 (2003)",
     "referenceSrc": "assets/videos/v2v/kill-bill-reference.mp4",
     "referencePoster": "assets/posters/v2v/kill-bill-reference.jpg",
     "src": "assets/videos/v2v/kill-bill-color.mp4",
@@ -70,8 +64,7 @@ window.FILMFLOW_CONTENT = {
   },
   {
     "id": "v2v-07",
-    "title": "coffee_clip02",
-    "caption": "Front-to-rear tracking through a corridor.",
+    "title": "2 AM Coffee (2023)",
     "referenceSrc": "assets/videos/v2v/coffee-clip02-reference.mp4",
     "referencePoster": "assets/posters/v2v/coffee-clip02-reference.jpg",
     "src": "assets/videos/v2v/coffee-clip02-color.mp4",
@@ -79,8 +72,7 @@ window.FILMFLOW_CONTENT = {
   },
   {
     "id": "v2v-08",
-    "title": "30 · Titanic",
-    "caption": "A continuous orbit around a stationary pair.",
+    "title": "Titanic (1997)",
     "referenceSrc": "assets/videos/v2v/titanic-reference.mp4",
     "referencePoster": "assets/posters/v2v/titanic-reference.jpg",
     "src": "assets/videos/v2v/titanic-color.mp4",

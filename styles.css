@@ -31,3 +31,11 @@
 .prompt-empty{color:#7c8795}
 .demo-wide .demo-prompt{min-height:128px}
 .demo-wide .prompt-text{font-size:14px}
+
+/* Shared playback control for each reference/result pair. */
+.comparison-card .demo-meta{gap:14px;flex-wrap:wrap}
+.pair-play-button{flex-shrink:0;padding:8px 13px;border:1px solid var(--blue);border-radius:6px;background:#fff;color:var(--blue);font:600 12px var(--sans,system-ui);cursor:pointer;min-height:36px}
+.pair-play-button:hover{background:#edf3ff}
+.pair-play-button:focus-visible{outline:3px solid #90b5ff;outline-offset:3px}
+.pair-play-button:disabled{cursor:wait;opacity:.65}
+.pair-play-button[aria-pressed="true"]{background:var(--blue);color:white}

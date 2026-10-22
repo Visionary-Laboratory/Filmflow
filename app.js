@@ -49,6 +49,68 @@
     return frame;
   }
 
+  function waitForMedia(video, ready, events) {
+    if (ready()) return Promise.resolve();
+    return new Promise((resolve, reject) => {
+      const cleanup = () => {
+        clearTimeout(timer);
+        events.forEach(event => video.removeEventListener(event, check));
+        video.removeEventListener("error", fail);
+      };
+      const check = () => { if (ready()) { cleanup(); resolve(); } };
+      const fail = () => { cleanup(); reject(new Error("Video could not be loaded.")); };
+      const timer = setTimeout(fail, 20000);
+      events.forEach(event => video.addEventListener(event, check));
+      video.addEventListener("error", fail);
+    });
+  }
+
+  function addPairPlayback(meta, pair, title) {
+    const videos = [...pair.querySelectorAll("video")];
+    if (videos.length !== 2) return;
+    const button = text("button", "pair-play-button", "Play both");
+    button.type = "button";
+    const update = () => {
+      if (button.disabled) return;
+      const playing = videos.some(video => !video.paused && !video.ended);
+      button.textContent = playing ? "Pause both" : "Play both";
+      button.setAttribute("aria-label", `${button.textContent} — ${title}`);
+      button.setAttribute("aria-pressed", String(playing));
+    };
+    videos.forEach(video => ["play", "pause", "ended"].forEach(event => video.addEventListener(event, update)));
+    button.addEventListener("click", async () => {
+      if (videos.some(video => !video.paused && !video.ended)) {
+        videos.forEach(video => video.pause());
+        update();
+        return;
+      }
+      const start = videos.some(video => video.ended) ? 0 : videos[0].currentTime;
+      button.disabled = true;
+      button.textContent = "Loading…";
+      button.removeAttribute("title");
+      try {
+        await Promise.all(videos.map(video => {
+          if (video.readyState < 3) video.load();
+          return waitForMedia(video, () => video.readyState >= 3, ["canplay"]);
+        }));
+        const duration = Math.min(...videos.map(video => video.duration));
+        const time = start >= duration ? 0 : start;
+        videos.forEach(video => { video.currentTime = time; });
+        await Promise.all(videos.map(video => waitForMedia(video, () => !video.seeking && video.readyState >= 3, ["seeked", "canplay"])));
+        const results = await Promise.allSettled(videos.map(video => video.play()));
+        if (results.some(result => result.status === "rejected")) throw new Error("Playback was blocked.");
+      } catch (error) {
+        videos.forEach(video => video.pause());
+        button.title = "Unable to play both videos. Click to retry.";
+      } finally {
+        button.disabled = false;
+        update();
+      }
+    });
+    update();
+    meta.append(button);
+  }
+
   function renderGallery(target, items, comparison = false) {
     const grid = document.getElementById(target);
     items.forEach(item => {
@@ -84,6 +146,7 @@
           }));
           pair.append(figure);
         }
+        addPairPlayback(meta, pair, item.title);
         card.append(meta, pair);
       } else {
         const prompt = document.createElement("div");
@@ -93,7 +156,6 @@
           item.caption || "Camera instruction to be added."));
         card.append(prompt, createMediaFrame({...item, groupId: item.id}), meta);
       }
-      if (comparison && item.caption) card.append(text("p", "demo-caption", item.caption));
       grid.append(card);
     });
   }
