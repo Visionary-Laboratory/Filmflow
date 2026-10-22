@@ -32,6 +32,12 @@
 .demo-wide .demo-prompt{min-height:128px}
 .demo-wide .prompt-text{font-size:14px}
 
+/* Let each row's instructions grow without cropping; align the video frames below. */
+#t2v-grid .demo-card{display:flex;flex-direction:column}
+#t2v-grid .demo-prompt{flex:1}
+#t2v-grid .demo-frame{flex-shrink:0;width:100%}
+.demo-duration{font:10px var(--mono);color:var(--muted);white-space:nowrap}
+
 /* Shared playback control for each reference/result pair. */
 .comparison-card .demo-meta{gap:14px;flex-wrap:wrap}
 .pair-play-button{flex-shrink:0;padding:8px 13px;border:1px solid var(--blue);border-radius:6px;background:#fff;color:var(--blue);font:600 12px var(--sans,system-ui);cursor:pointer;min-height:36px}

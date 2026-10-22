@@ -161,6 +161,8 @@
       meta.append(heading);
       if (!item.src && (!comparison || !item.referenceSrc)) {
         meta.append(text("span", "demo-state", "To be added"));
+      } else if (!comparison && item.duration) {
+        meta.append(text("span", "demo-duration", item.duration));
       }
       if (comparison) {
         const pair = document.createElement("div");
@@ -186,7 +188,7 @@
       } else {
         const prompt = document.createElement("div");
         prompt.className = "demo-prompt";
-        prompt.append(text("span", "prompt-label", "Input prompt"));
+        prompt.append(text("span", "prompt-label", "Camera instruction"));
         prompt.append(renderInstruction(item));
         card.append(prompt, createMediaFrame({...item, groupId: item.id}), meta);
       }

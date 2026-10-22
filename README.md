@@ -14,10 +14,10 @@ python3 -m http.server 8000
 
 ## Demo 布局
 
-- Text-to-video（T2V）：同一区域内展示 20 个空位。前 4 个长镜头为大尺寸，桌面端每行 2 个；后 16 个短镜头每行 4 个。不增加长短镜头分区或标题。`content.js` 中 `wide: true` 控制大尺寸展示。
+- Text-to-video（T2V）：同一区域内展示 20 条视频。前 4 条为大尺寸，桌面端每行 2 个；后 16 条小版面每行 4 个。不增加长短镜头分区或标题。`content.js` 中 `wide: true` 控制大尺寸展示。
 - Video-to-video：6 组对比示例，每组分别预留原视频与 FilmFlow 结果，共 12 个视频位。桌面端每行 2 组，共 3 行；组内左右并排。平板端每行 1 组；手机端原视频在上、结果在下。
 - T2V 平板端 2 列，手机端 1 列；所有视频位保持 16:9。
-- 每个 T2V 视频上方固定预留 Input prompt 文本区，长镜头预留更大的空间。填写 `caption` 后显示完整输入文本，保留换行并随内容自动增高。
+- 每个 T2V 视频上方显示 Camera instruction 文本区，展示运镜提示词摘要；文字随内容自动增高，同行视频保持对齐。
 
 ## 替换视频和文字
 
@@ -50,7 +50,9 @@ FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";
 
 ## 发布
 
-GitHub Pages 地址：https://visionary-laboratory.github.io/Filmflow/
+GitHub Pages 目标地址：https://visionary-laboratory.github.io/Filmflow/
+
+当前 GitHub 设置提示：私有仓库需要支持 Pages 的套餐或改为公开后才能启用。分支推送本身不代表网站已上线。
 
 使用 `gh-pages` 分支根目录发布。修改完成后提交并推送该分支。
 
@@ -67,3 +69,7 @@ GitHub Pages 地址：https://visionary-laboratory.github.io/Filmflow/
 T2V/V2V 小标题正下方分别解释任务和观看方式。`t2vHighlights` 只指定网页显示时加粗的短语，原 `caption` 文本保持不变；管线输入不添加标记。V2V 说明同时播放及暂停按钮的用法。
 
 Prisoners (2013) 已替换为用户确认的场景 27 庭院版本，原灰模运镜和人物动画保持不变；彩色归档为 `v2v_06_pan01_scene27_20261021`。旧场景 04 归档保留。
+
+## 最新 T2V 展示
+
+20 条 T2V 视频已与线上预览同步。第四个大版面的果园跑步视频为 20 秒新版场景，保留原相机轨迹、对焦和跑步动画，重建树木、草地、地表与人物衣服。视频文件为 `assets/videos/t2v/orchard-realistic-pursuit.mp4`。所有网页媒体都使用相对路径，适配 `/Filmflow/` 子路径。
