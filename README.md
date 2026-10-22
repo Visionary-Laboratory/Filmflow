@@ -53,3 +53,7 @@ FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";
 GitHub Pages 地址：https://visionary-laboratory.github.io/Filmflow/
 
 使用 `gh-pages` 分支根目录发布。修改完成后提交并推送该分支。
+
+## 已归档 V2V 彩色示例
+
+已填入 6 组：13、arc01、gump01、07、pan01、28。每组原视频在左、彩色结果在右。`assets/v2v-manifest.json` 记录归档来源与视频 SHA-256；视频为归档文件的原样副本。剩余两个位置保留为空。

@@ -1,0 +1,102 @@
+{
+  "approved_color_cases": 6,
+  "layout": "reference_left_color_right",
+  "cases": [
+    {
+      "slot": "v2v-01",
+      "archive": "v2v_01_vertigo_scene17_static_car_20261021",
+      "files": {
+        "referenceSrc": {
+          "path": "assets/videos/v2v/vertigo-car-reference.mp4",
+          "sha256": "d977f0956c40b352e641fd2f830554b833de4917fc8fe43167b44d88e2349f52",
+          "archive_file": "reference.mp4"
+        },
+        "src": {
+          "path": "assets/videos/v2v/vertigo-car-color.mp4",
+          "sha256": "8b3de11e30c8aa9ecf4340b36bbc82dab31859055bfb828bb5e8a6075c19923c",
+          "archive_file": "demo.mp4"
+        }
+      }
+    },
+    {
+      "slot": "v2v-02",
+      "archive": "v2v_02_arc01_scene14_static_group_20261021",
+      "files": {
+        "referenceSrc": {
+          "path": "assets/videos/v2v/arc01-group-reference.mp4",
+          "sha256": "9eff206ea58b3ba85b23d476f7d0b4e7c76f868429efeb2ead2a966d667329a1",
+          "archive_file": "reference.mp4"
+        },
+        "src": {
+          "path": "assets/videos/v2v/arc01-group-color.mp4",
+          "sha256": "71f0f80fa6ad60105d6ee2494ffd5956b47591532e9aa415fe837595dbad96b8",
+          "archive_file": "demo.mp4"
+        }
+      }
+    },
+    {
+      "slot": "v2v-03",
+      "archive": "v2v_03_gump01_scene14_20261021",
+      "files": {
+        "referenceSrc": {
+          "path": "assets/videos/v2v/gump01-reference.mp4",
+          "sha256": "c1d53619a881c30c84e111f5bcb6ccb3904478ee18f89a87120f4bb23806f35e",
+          "archive_file": "reference.mp4"
+        },
+        "src": {
+          "path": "assets/videos/v2v/gump01-color.mp4",
+          "sha256": "c2d03dbeb770cf3b4c05ca150c220de1d77bc097296155f93a17915014503784",
+          "archive_file": "demo.mp4"
+        }
+      }
+    },
+    {
+      "slot": "v2v-04",
+      "archive": "v2v_05_07_scene22_20261021",
+      "files": {
+        "referenceSrc": {
+          "path": "assets/videos/v2v/notorious-reference.mp4",
+          "sha256": "092d8477b9a4ebe9ee935f3553d842e5dd460a5f868803ab4665a52ce8884751",
+          "archive_file": "reference.mp4"
+        },
+        "src": {
+          "path": "assets/videos/v2v/notorious-color.mp4",
+          "sha256": "cc1edaa3d2ef55fbb55b40640a0ab3dfe3ce5f0f8a2efcc2432fd57651a3b18e",
+          "archive_file": "demo.mp4"
+        }
+      }
+    },
+    {
+      "slot": "v2v-05",
+      "archive": "v2v_06_pan01_scene04_20261021",
+      "files": {
+        "referenceSrc": {
+          "path": "assets/videos/v2v/pan01-reference.mp4",
+          "sha256": "613a91221ed1e45803304ec5903eb7563dfb3d14d1317eeed4566ff5d9b2ba3b",
+          "archive_file": "reference.mp4"
+        },
+        "src": {
+          "path": "assets/videos/v2v/pan01-color.mp4",
+          "sha256": "674c3314b5af4bf539a25956540dc2dc47000bb8752bae7382769ea5d2c0bcad",
+          "archive_file": "demo.mp4"
+        }
+      }
+    },
+    {
+      "slot": "v2v-06",
+      "archive": "v2v_07_28_scene11_20261021",
+      "files": {
+        "referenceSrc": {
+          "path": "assets/videos/v2v/kill-bill-reference.mp4",
+          "sha256": "3b073b5e16dea3250e55f95f1eac33f2747118ce6dd283e67fa4ddf136620949",
+          "archive_file": "reference.mp4"
+        },
+        "src": {
+          "path": "assets/videos/v2v/kill-bill-color.mp4",
+          "sha256": "3538409d096ca4224334c178e9e12b9aa57d963acc696f50f90f7865afb2e3de",
+          "archive_file": "demo.mp4"
+        }
+      }
+    }
+  ]
+}
