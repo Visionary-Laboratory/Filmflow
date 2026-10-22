@@ -15,7 +15,7 @@ python3 -m http.server 8000
 ## Demo 布局
 
 - Text-to-video（T2V）：同一区域内展示 20 个空位。前 4 个长镜头为大尺寸，桌面端每行 2 个；后 16 个短镜头每行 4 个。不增加长短镜头分区或标题。`content.js` 中 `wide: true` 控制大尺寸展示。
-- Video-to-video：8 组对比示例，每组分别预留原视频与 FilmFlow 结果，共 16 个视频位。桌面端每行 2 组，共 4 行；组内左右并排。平板端每行 1 组；手机端原视频在上、结果在下。
+- Video-to-video：6 组对比示例，每组分别预留原视频与 FilmFlow 结果，共 12 个视频位。桌面端每行 2 组，共 3 行；组内左右并排。平板端每行 1 组；手机端原视频在上、结果在下。
 - T2V 平板端 2 列，手机端 1 列；所有视频位保持 16:9。
 - 每个 T2V 视频上方固定预留 Input prompt 文本区，长镜头预留更大的空间。填写 `caption` 后显示完整输入文本，保留换行并随内容自动增高。
 
@@ -56,8 +56,8 @@ GitHub Pages 地址：https://visionary-laboratory.github.io/Filmflow/
 
 ## 已归档 V2V 彩色示例
 
-已填入 8 组：13、arc01、gump01、07、pan01、28、coffee_clip02、30（Titanic）。每组原视频在左、彩色结果在右。`assets/v2v-manifest.json` 记录归档来源与视频 SHA-256；视频为归档文件的原样副本。八个位置均已填入已批准的彩色视频。
+当前展示 6 组：13、arc01、gump01、07、pan01、coffee_clip02。《杀死比尔》和《泰坦尼克》已从展示中移除，原归档保留。每组原视频在左、彩色结果在右。`assets/v2v-manifest.json` 记录归档来源与视频 SHA-256；视频为归档文件的原样副本。六个位置均已填入已批准的彩色视频。
 
 ## V2V 标题与播放
 
-八组标题显示来源影片及年份。每组的 `Play both` 按钮先对齐播放位置，再同时播放原片与结果；播放时可用 `Pause both` 同时暂停。保留两侧播放器的独立控制，不显示组下方说明。影片出处与核对依据记录在 `assets/v2v-manifest.json`；coffee_clip02 来自 [2 AM Coffee (2023)](https://www.youtube.com/watch?v=SR__amDl1c8)。
+六组标题显示来源影片及年份。每组的 `Play both` 按钮先对齐播放位置，再同时播放原片与结果；播放时可用 `Pause both` 同时暂停。保留两侧播放器的独立控制，不显示组下方说明。影片出处与核对依据记录在 `assets/v2v-manifest.json`；coffee_clip02 来自 [2 AM Coffee (2023)](https://www.youtube.com/watch?v=SR__amDl1c8)。

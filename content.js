@@ -55,28 +55,12 @@ window.FILMFLOW_CONTENT = {
     "poster": "assets/posters/v2v/pan01-color.jpg"
   },
   {
-    "id": "v2v-06",
-    "title": "Kill Bill: Vol. 1 (2003)",
-    "referenceSrc": "assets/videos/v2v/kill-bill-reference.mp4",
-    "referencePoster": "assets/posters/v2v/kill-bill-reference.jpg",
-    "src": "assets/videos/v2v/kill-bill-color.mp4",
-    "poster": "assets/posters/v2v/kill-bill-color.jpg"
-  },
-  {
     "id": "v2v-07",
     "title": "2 AM Coffee (2023)",
     "referenceSrc": "assets/videos/v2v/coffee-clip02-reference.mp4",
     "referencePoster": "assets/posters/v2v/coffee-clip02-reference.jpg",
     "src": "assets/videos/v2v/coffee-clip02-color.mp4",
     "poster": "assets/posters/v2v/coffee-clip02-color.jpg"
-  },
-  {
-    "id": "v2v-08",
-    "title": "Titanic (1997)",
-    "referenceSrc": "assets/videos/v2v/titanic-reference.mp4",
-    "referencePoster": "assets/posters/v2v/titanic-reference.jpg",
-    "src": "assets/videos/v2v/titanic-color.mp4",
-    "poster": "assets/posters/v2v/titanic-color.jpg"
   }
 ]
 };
