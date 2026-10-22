@@ -8,8 +8,17 @@
     el.textContent = value;
     return el;
   };
-  document.getElementById("authors").textContent = content.authors;
-  document.getElementById("affiliations").textContent = content.affiliations;
+  for (const key of ["authors", "affiliations"]) {
+    const container = document.getElementById(key);
+    container.replaceChildren(...content[key].map(entry => {
+      const item = text("span", key === "authors" ? "author" : "affiliation", "");
+      const name = document.createTextNode(entry.name);
+      const marks = text("sup", "", entry.marks);
+      if (key === "authors") item.append(name, marks);
+      else item.append(marks, name);
+      return item;
+    }));
+  }
 
   function createMediaFrame({src, poster, title, id, groupId, placeholder}) {
     const frame = document.createElement("div");

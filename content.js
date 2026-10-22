@@ -3,8 +3,8 @@
    Optional fields: poster (image path), caption (prompt), title (display title).
    Each V2V example has separate referenceSrc/referencePoster and src/poster fields. */
 window.FILMFLOW_CONTENT = {
-  authors: "Anonymous authors",
-  affiliations: "Paper under double-blind review",
+  authors: [{"name": "Yiming Zhang", "marks": "1,2*"}, {"name": "Jiarui Guo", "marks": "2*"}, {"name": "Haojia Wei", "marks": "2,3*"}, {"name": "Yifei Liu", "marks": "4"}, {"name": "Yifan Yang", "marks": "2"}, {"name": "Hongjie Zhang", "marks": "4"}, {"name": "Xue Yang", "marks": "2"}, {"name": "Zhihang Zhong", "marks": "2†"}],
+  affiliations: [{"name": "Cornell University", "marks": "1"}, {"name": "Shanghai Jiao Tong University", "marks": "2"}, {"name": "University of California, Los Angeles", "marks": "3"}, {"name": "Shanghai Artificial Intelligence Laboratory", "marks": "4"}],
   codeUrl: "",
   datasetUrl: "",
   t2v: Array.from({length: 20}, (_, i) => ({

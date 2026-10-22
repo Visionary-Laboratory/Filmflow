@@ -39,7 +39,7 @@ FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";
 
 ## 论文与图片
 
-页面文案来自相邻 `iclr_files/8246.pdf`（FilmFlow 论文）；当前论文为匿名审稿版本，因此保留 Anonymous authors，不推测作者和机构。
+页面研究文案来自 FilmFlow 论文。作者、机构、顺序与上标按用户提供的标题页填写；在 `content.js` 的 `authors`、`affiliations` 数组中维护姓名/机构名和 `marks` 上标。
 
 - Paper 入口显示 Coming soon，网站不包含论文 PDF。
 - `assets/teaser.png`：使用用户指定的 `teaser_v14.png` 原图。
