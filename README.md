@@ -41,7 +41,7 @@ FILMFLOW_CONTENT.v2v[0].src = "assets/videos/v2v-01.mp4";
 
 页面研究文案来自 FilmFlow 论文。作者、机构、顺序与上标按用户提供的标题页填写；在 `content.js` 的 `authors`、`affiliations` 数组中维护姓名/机构名和 `marks` 上标。
 
-- Paper 入口显示 Coming soon，网站不包含论文 PDF。
+- Paper 入口链接至 https://arxiv.org/abs/2610.30753，网站不包含论文 PDF。
 - `assets/teaser.png`：使用用户指定的 `teaser_v14.png` 原图。
 - `assets/method.png`：从用户指定的 `FilmFlow_design_v17.pdf` 以 2 倍分辨率渲染；点击网页方法图可打开原始 PDF（`assets/filmflow-method.pdf`）。
 - 论文摘要在网页中做了精简，保留方法和 CinemaBench 的 150 / 750 / 60 数据，不添加未核实的结果。
